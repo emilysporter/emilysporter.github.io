@@ -1,4 +1,8 @@
 ## Welcome to GitHub Pages
+title: Welcome to Emily's Website
+description: Let's fix this.
+
+
 
 You can use the [editor on GitHub](https://github.com/emilysporter/emilysporter.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
