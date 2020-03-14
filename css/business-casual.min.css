@@ -18,8 +18,8 @@
              font-size:1rem;
              font-weight:800}.section-heading .section-heading-lower{display:block;
                font-size:3rem;font-weight:100}.bg-faded{background-color:rgba(255,255,255,.85)}#mainNav{background-color:rgba(47,23,15,.9);
-                 font-family:Raleway}#mainNav .navbar-brand{color:#e6a756}#mainNav .navbar-nav .nav-item .nav-link{color:rgba(255,255,255,.7);
-                   font-weight:800}#mainNav .navbar-nav .nav-item.active .nav-link{color:#e6a756}@media (min-width:992px){#mainNav .navbar-nav .nav-item .nav-link{font-size:.9rem}#mainNav .navbar-nav .nav-item .nav-link:hover{color:rgba(255,255,255,.4)}#mainNav .navbar-nav .nav-item.active .nav-link:hover{color:#e6a756}}.btn-xl{font-weight:700;
+                 font-family:Raleway}#mainNav .navbar-brand{color:#aed6f1}#mainNav .navbar-nav .nav-item .nav-link{color:rgba(255,255,255,.7);
+                   font-weight:800}#mainNav .navbar-nav .nav-item.active .nav-link{color:#aed6f1}@media (min-width:992px){#mainNav .navbar-nav .nav-item .nav-link{font-size:.9rem}#mainNav .navbar-nav .nav-item .nav-link:hover{color:rgba(255,255,255,.4)}#mainNav .navbar-nav .nav-item.active .nav-link:hover{color:#aed6f1}}.btn-xl{font-weight:700;
                      font-size:.8rem;
                      padding-top:1.5rem;
                      padding-bottom:1.5rem;
@@ -36,4 +36,6 @@
                                      position:relative;z-index:1}}@media (min-width:992px){.product-item .product-item-title{position:relative;
                                         z-index:1;margin-bottom:-3rem}.product-item .product-item-img{position:relative;z-index:0;
                                            max-width:60vw}.product-item .product-item-description{position:relative;z-index:1;margin-top:-3rem;
-                                              max-width:50vw}}.list-hours{font-size:.9rem}.list-hours .list-hours-item{border-bottom:1px solid rgba(230,167,86,.5);padding-bottom:.25rem;margin-bottom:1rem;font-style:italic}.list-hours .list-hours-item.today{font-weight:700;color:#e6a756}@media (min-width:992px){.list-hours{width:50%;font-size:1.1rem}}.address strong{font-size:1.2rem}.footer{background-color:rgba(47,23,15,.9)}.text-primary{color:#e6a756!important}.bg-primary{background-color:#e6a756!important}.btn{box-shadow:0 3px 3px 0 rgba(33,37,41,.1)}.btn-primary{background-color:#e6a756;border-color:#e6a756}.btn-primary:active,.btn-primary:focus,.btn-primary:hover{background-color:#df902a;border-color:#df902a}.font-weight-light{font-weight:100!important}
+                                              max-width:50vw}}.list-hours{font-size:.9rem}.list-hours .list-hours-item{border-bottom:1px solid rgba(230,167,86,.5);
+                                                 padding-bottom:.25rem;margin-bottom:1rem;
+                                                 font-style:italic}.list-hours .list-hours-item.today{font-weight:700;color:#aed6f1}@media (min-width:992px){.list-hours{width:50%;font-size:1.1rem}}.address strong{font-size:1.2rem}.footer{background-color:rgba(47,23,15,.9)}.text-primary{color:#aed6f1!important}.bg-primary{background-color:#aed6f1!important}.btn{box-shadow:0 3px 3px 0 rgba(33,37,41,.1)}.btn-primary{background-color:#aed6f1;border-color:#aed6f1}.btn-primary:active,.btn-primary:focus,.btn-primary:hover{background-color:#3498db;border-color:#3498db}.font-weight-light{font-weight:100!important}
