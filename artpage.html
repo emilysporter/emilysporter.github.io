@@ -194,6 +194,13 @@
             </div>
             
             <br><img id="myImg" src="img/adaptationsheperdessandherflockpainting.jpg" alt="Adaptation of Sheperdess and Her Flock by Jean-Francois Millet 1863. 3ft x 2ft. Oil. 11/14/2019" width="400" height="300">
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img02">
+              <div id="caption"></div>
+            </div>
+            
+            
             <br><img id="myImg" src="img/objects.jpg" alt="Objects. Six 5in x 6in. Oil. 9/26/2019" width="400" height="200">
             
             
@@ -273,6 +280,7 @@
   // Get the image and insert it inside the modal - use its "alt" text as a caption
   var img = document.getElementById("myImg");
   var modalImg = document.getElementById("img01");
+  var modalImg = document.getElementById("img02");
   var captionText = document.getElementById("caption");
   img.onclick = function(){
     modal.style.display = "block";
