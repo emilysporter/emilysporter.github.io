@@ -31,9 +31,7 @@
       transition: 0.3s;
     }
 
-    #myImg:hover {
-      opacity: 0.7;
-    }
+    #myImg:hover {opacity: 0.7;}
 
     /* The Modal (background) */
     .modal {
@@ -192,12 +190,12 @@
             <img class="myImg" src="img/adaptationsheperdessandherflockpainting.jpg" alt="Adaptation of Sheperdess and Her Flock by Jean-Francois Millet 1863. 3ft x 2ft. Oil. 11/14/2019" width="400" height="300">
             <img class="myImg" src="img/objects.jpg" alt="Objects. Six 5in x 6in. Oil. 9/26/2019" width="400" height="200">
 
-            <!-- The Modal --><!-- Add HTML
+            <!-- The Modal --><!-- Add HTML-->
             <div id="myModal" class="modal">
               <span class="close">&times;</span>
               <img class="modal-content" id="img01">
               <div id="caption"></div>
-            </div> -->
+            </div>
             
             
       </div>
@@ -269,7 +267,7 @@
   <!-- Add JavaScript -->
   <script>
   // Get the modal
-  // var modal = document.getElementById("myModal");  **********
+  var modal = document.getElementById("myModal");
 
   // Get the image and insert it inside the modal - use its "alt" text as a caption
   var img = document.getElementByClassName("myImg");
@@ -279,11 +277,11 @@
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
-}
+  }
   // Go through all of the images with our custom class
   for (var i = 0; i < images.length; i++) {
     img[i].addEventListener('click', showModal);
-    }
+  }
 
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
