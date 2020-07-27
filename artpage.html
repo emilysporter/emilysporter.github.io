@@ -25,39 +25,31 @@
 
   <!-- Add CSS-->
   <style>
-  #myImg {
+  /* Style the Image Used to Trigger the Modal */
+  .modalImg {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
   }
 
-  #myImg:hover {
-    opacity: 0.7;
-  }
+  .modalImg:hover {opacity: 0.7;}
 
+  /* The Modal (background) */
   .modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    padding-top: 100px;
-    /* Location of the box */
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   }
 
+  /* Modal Content (Image) */
   .modal-content {
     margin: auto;
     display: block;
@@ -65,6 +57,7 @@
     max-width: 700px;
   }
 
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
   #caption {
     margin: auto;
     display: block;
@@ -76,29 +69,28 @@
     height: 150px;
   }
 
-  .modal-content,
-  #caption {
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.6s;
   }
 
   @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}  
-  }
-    
-  @keyframes zoom {
-    from {
-      transform: scale(0)
-    }
-    to {
-      transform: scale(1)
-    }
+    to {-webkit-transform:scale(1)}
   }
 
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+  /* The Close Button */
   .close {
     position: absolute;
-    top: 15px;
+    top: 50px;
     right: 35px;
     color: #f1f1f1;
     font-size: 40px;
@@ -113,11 +105,14 @@
     cursor: pointer;
   }
 
-  @media only screen and (max-width: 700px) {
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
     .modal-content {
-      width: 100%;
+        width: 100%;
     }
   }
+    
+    
   </style>
   
   
@@ -195,9 +190,9 @@
             </p>
             
                  
-                 <img id="myImg" class="imageClass" src="img/stilllifeincubism.jpg" alt="Still Life Cubism. 24in x 24in. Oil. 12/5/2019." width="300" height="300">
-                 <img id="myImg" class="imageClass" src="img/adaptationsheperdessandherflockpainting.jpg" alt="Adaptation of Sheperdess and Her Flock by Jean-Francois Millet 1863. 3ft x 2ft. Oil. 11/14/2019" width="400" height="300">
-                 <img id="myImg" class="imageClass" src="img/objects.jpg" alt="Objects. Six 5in x 6in. Oil. 9/26/2019" width="400" height="200">
+                 <img class="modalImg" id="myImg1" src="img/stilllifeincubism.jpg" alt="Still Life Cubism. 24in x 24in. Oil. 12/5/2019." width="300" height="300">
+                 <img class="modalImg" id="myImg2" src="img/adaptationsheperdessandherflockpainting.jpg" alt="Adaptation of Sheperdess and Her Flock by Jean-Francois Millet 1863. 3ft x 2ft. Oil. 11/14/2019" width="400" height="300">
+                 <img class="modalImg" id="myImg3" src="img/objects.jpg" alt="Objects. Six 5in x 6in. Oil. 9/26/2019" width="400" height="200">
          
             
                  <!-- The Modal --><!-- Add HTML-->
@@ -283,23 +278,51 @@
   // Create References to the Modal
   var modal = document.getElementById("myModal");
   // To all the images and insert it inside the modal
-  var images = document.getElementByClassName("imageClass");
- 
- 
+  var img1 = document.getElementById('myImg1');
+  var img2 = document.getElementById('myImg2');
+    
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
   
-  // Go through all of the images with our custom class
-  for (var i = 0; i < images.length; i++) {
-    var img = images[i];
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function() {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      modalImg.alt = this.alt;
-      captionText.innerHTML = this.alt;
-    }
+  img1.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText1.innerHTML = this.alt;
   }
 
+  img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+  }
+    
+  img3.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+  }  
+    
+    
+    
+    
+    
+    
+  // Go through all of the images with our custom class
+  //for (var i = 0; i < images.length; i++) {
+  //  var img = images[i];
+  //  img.onclick = function(evt) {
+  //    modal.style.display = "block";
+  //    modalImg.src = this.src;
+  //    captionText.innerHTML = this.alt;
+  //  }
+  //}
+  
+  
+    
+    
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
 
