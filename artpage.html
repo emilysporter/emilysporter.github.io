@@ -194,6 +194,7 @@
                  <img class="modalImg" id="myImg2" src="img/adaptationsheperdessandherflockpainting.jpg" alt="Adaptation of Sheperdess and Her Flock by Jean-Francois Millet 1863. 3ft x 2ft. Oil. 11/14/2019" width="400" height="300">
                  <img class="modalImg" id="myImg3" src="img/objects.jpg" alt="Objects. Six 5in x 6in. Oil. 9/26/2019" width="400" height="200">
                  <img class="modalImg" id="myImg4" src="img/masquerade.jpg" alt="Masquerade. 20in x 16in. Oil. 10/10/2019" width="400" height="250">
+                 <img class="modalImg" id="myImg5" src="img/ballerina_.jpg" alt="Ballerina. 16in x 20in. Oil. 9/13/2019" width="250" height="400">
             
                 <!-- The Modal -->
                 <div id='myModal' class="modal">
@@ -287,6 +288,7 @@
   var img2 = document.getElementById('myImg2');
   var img3 = document.getElementById('myImg3');
   var img4 = document.getElementById('myImg4');
+  var img5 = document.getElementById('myImg5');
     
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
@@ -319,7 +321,12 @@
     captionText.innerHTML = this.alt;
   } 
     
-    
+  img5.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+  }
     
     
     
