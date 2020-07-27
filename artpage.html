@@ -195,9 +195,9 @@
             </p>
             
                  
-                 <img class="myImages" id="myImg" src="img/stilllifeincubism.jpg" alt="Still Life Cubism. 24in x 24in. Oil. 12/5/2019." width="300" height="300">
-                 <img class="myImages" id="myImg" src="img/adaptationsheperdessandherflockpainting.jpg" alt="Adaptation of Sheperdess and Her Flock by Jean-Francois Millet 1863. 3ft x 2ft. Oil. 11/14/2019" width="400" height="300">
-                 <img class="myImages" id="myImg" src="img/objects.jpg" alt="Objects. Six 5in x 6in. Oil. 9/26/2019" width="400" height="200">
+                 <img id="myImg" class="imageClass" src="img/stilllifeincubism.jpg" alt="Still Life Cubism. 24in x 24in. Oil. 12/5/2019." width="300" height="300">
+                 <img id="myImg" class="imageClass" src="img/adaptationsheperdessandherflockpainting.jpg" alt="Adaptation of Sheperdess and Her Flock by Jean-Francois Millet 1863. 3ft x 2ft. Oil. 11/14/2019" width="400" height="300">
+                 <img id="myImg" class="imageClass" src="img/objects.jpg" alt="Objects. Six 5in x 6in. Oil. 9/26/2019" width="400" height="200">
          
             
                  <!-- The Modal --><!-- Add HTML-->
@@ -278,18 +278,21 @@
   <!-- Add JavaScript -->
   <script>
   // Create References to the Modal
-  var modal = document.getElementById('myModal');
+  var modal = document.getElementById("myModal");
   // To all the images and insert it inside the modal
-  var images = document.getElementByClassName('myImages');
-  var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
+  var images = document.getElementByClassName("imageClass");
+ 
+ 
   
   // Go through all of the images with our custom class
   for (var i = 0; i < images.length; i++) {
     var img = images[i];
-    img.onclick = function(evt) {
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function() {
       modal.style.display = "block";
       modalImg.src = this.src;
+      modalImg.alt = this.alt;
       captionText.innerHTML = this.alt;
     }
   }
