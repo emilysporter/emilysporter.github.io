@@ -23,7 +23,7 @@
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
 
-  <!-- Add CSS
+  <!-- Add CSS-->
   <style>
   #myImg {
     border-radius: 5px;
@@ -118,7 +118,7 @@
       width: 100%;
     }
   }
-  </style>-->
+  </style>
   
   
   
@@ -194,32 +194,18 @@
             <p>
             </p>
             
-            <div class="w3-row-padding">
-              <div class="w3-container w3-third">
-                 <img src="img/stilllifeincubism.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="Still Life Cubism. 24in x 24in. Oil. 12/5/2019." width="300" height="300">
-              </div>
-              <div class="w3-container w3-third">
-                 <img src="img/adaptationsheperdessandherflockpainting.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="Adaptation of Sheperdess and Her Flock by Jean-Francois Millet 1863. 3ft x 2ft. Oil. 11/14/2019" width="400" height="300">
-              </div>
-              <div class="w3-container w3-third">
-                 <img src="img/objects.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="Objects. Six 5in x 6in. Oil. 9/26/2019" width="400" height="200">
-              </div>
-            </div>
-
             
-            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-              <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                <div class="w3-modal-content w3-animate-zoom">
-                  <img id="img01" style="width:100%">
-                </div>
-            </div>
+                 <img class="myImages" id="myImg" src="img/stilllifeincubism.jpg" alt="Still Life Cubism. 24in x 24in. Oil. 12/5/2019." width="300" height="300">
+                 <img class="myImages" id="myImg" src="img/adaptationsheperdessandherflockpainting.jpg" alt="Adaptation of Sheperdess and Her Flock by Jean-Francois Millet 1863. 3ft x 2ft. Oil. 11/14/2019" width="400" height="300">
+                 <img class="myImages" id="myImg" src="img/objects.jpg" alt="Objects. Six 5in x 6in. Oil. 9/26/2019" width="400" height="200">
+         
             
-            <!-- The Modal --><!-- Add HTML
-            <div id="myModal" class="modal">
-              <span class="close">&times;</span>
-              <img class="modal-content" id="img01">
-              <div id="caption"></div>
-            </div>--> 
+            <!-- The Modal --><!-- Add HTML-->
+                 <div id="myModal" class="modal">
+                   <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                 </div> 
 
             
             
@@ -290,7 +276,7 @@
   <script src="js/resume.min.js"></script>
 
   <!-- Add JavaScript -->
-  <!--<script>
+  <script>
   // Create References to the Modal
   var modal = document.getElementById('myModal');
   // To all the images and insert it inside the modal
@@ -315,17 +301,9 @@
   span.onclick = function() { 
     modal.style.display = "none";
   }
-  </script>-->
-    
-  <script>
-  function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-  }
   </script>
-        
-        
-        
+    
+      
         
 </body>
 </html>
