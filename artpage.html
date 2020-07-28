@@ -228,7 +228,7 @@
           </p>
           <p></p>
   
-                <img class="modalImg" id="myImg7" src="img/adaptationofoneofJeanFranciosMilletworks.jpeg" alt="Adaptation of one Jean Francios Millet's works. Choal. 10/30/2019" width="300" height="400">
+                 <img class="modalImg" id="myImg7" src="img/adaptationofoneofJeanFranciosMilletworks.jpeg" alt="Adaptation of one Jean Francios Millet's works. Choal. 10/30/2019" width="300" height="400">
 
         
         
@@ -259,10 +259,20 @@
     
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="videos">
       <div class="w-100">
-        <h2 class="mb-5">Videos</h2>
-          <p class="lead mb-5">Here are films I've made for various school projects.
+        <h2 class="mb-5">Digital Media</h2>
+          <p class="lead mb-5">Here are digital artworks I've made for various school projects.
           </p>
           <p></p>
+        
+                  <img class="modalImg" id="myImg8" src="img/AdaLovelaceArtProjectEmilyPorter_Brighter.png" alt="Mother of Programming. Digital. 3/18/2018" width="300" height="400">
+
+        
+        
+        
+        
+        
+        
+        
   
         
       </div>
@@ -304,6 +314,7 @@
   var img5 = document.getElementById('myImg5');
   var img6 = document.getElementById('myImg6');
   var img7 = document.getElementById('myImg7');
+  var img8 = document.getElementById('myImg8');
     
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
@@ -357,6 +368,12 @@
     captionText.innerHTML = this.alt;
   }
     
+  img8.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+  }
 
     
     
