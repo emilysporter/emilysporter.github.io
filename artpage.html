@@ -228,6 +228,16 @@
           </p>
           <p></p>
   
+                <img class="modalImg" id="myImg7" src="img/adaptationofoneofJeanFranciosMilletworks.jpeg" alt="Adaptation of one Jean Francios Millet's works. Choal. 10/30/2019" width="300" height="400">
+
+        
+        
+        
+        
+        
+        
+        
+        
         
       </div>
     </section>
@@ -293,6 +303,7 @@
   var img4 = document.getElementById('myImg4');
   var img5 = document.getElementById('myImg5');
   var img6 = document.getElementById('myImg6');
+  var img7 = document.getElementById('myImg7');
     
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
@@ -339,7 +350,12 @@
     captionText.innerHTML = this.alt;
   }
     
-    
+  img7.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+  }
     
 
     
