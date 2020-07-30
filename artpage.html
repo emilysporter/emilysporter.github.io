@@ -196,7 +196,7 @@
                  <img class="modalImg" id="myImg4" src="img/masquerade.jpg" alt="Masquerade. 20in x 16in. Oil. 10/10/2019" width="400" height="250">
                  <img class="modalImg" id="myImg5" src="img/ballerina_.jpg" alt="Ballerina. 16in x 20in. Oil. 9/13/2019" width="250" height="300">
                  <img class="modalImg" id="myImg6" src="img/wildviolets.jpg" alt="Wild Violets. Acrylic 2017" width="400" height="300">
-            
+                 <img class="modalImg" id="myImg10" src="img/daffodils.jpg" alt="Daffodils. 22in x 14in. Acrylic. 11/14/2017" width="400" height="250">
             
             
                 <!-- The Modal -->
@@ -316,6 +316,7 @@
   var img7 = document.getElementById('myImg7');
   var img8 = document.getElementById('myImg8');
   var img9 = document.getElementById('myImg9');
+  var img10 = document.getElementById('myImg10');
     
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
@@ -383,6 +384,12 @@
     captionText.innerHTML = this.alt;
   }
     
+  img10.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+  }
     
     
     
