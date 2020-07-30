@@ -254,6 +254,7 @@
           <p></p>
   
                  <img class="modalImg" id="myImg13" src="img/DSCF0788.JPG" alt="Off the Coast. 6/27/2015" width="400" height="300">
+                 <img class="modalImg" id="myImg14" src="img/DSCF0743.JPG" alt="Racing Against the Wind Along the Vinyards. 6/27/2015" width="400" height="300">
 
         
         
@@ -333,6 +334,7 @@
   var img11 = document.getElementById('myImg11');
   var img12 = document.getElementById('myImg12');
   var img13 = document.getElementById('myImg13');
+  var img14 = document.getElementById('myImg14');
     
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
@@ -428,7 +430,12 @@
     captionText.innerHTML = this.alt;
   }
     
-    
+  img14.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+  }
     
     
     
