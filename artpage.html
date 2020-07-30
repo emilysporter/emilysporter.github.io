@@ -253,6 +253,16 @@
           </p>
           <p></p>
   
+                 <img class="modalImg" id="myImg13" src="img/DSCF0788.JPG" alt="Off the Coast. 6/27/2015" width="400" height="300">
+
+        
+        
+        
+        
+        
+        
+        
+        
         
       </div>
     </section>
@@ -322,6 +332,7 @@
   var img10 = document.getElementById('myImg10');
   var img11 = document.getElementById('myImg11');
   var img12 = document.getElementById('myImg12');
+  var img13 = document.getElementById('myImg13');
     
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
@@ -396,7 +407,6 @@
     captionText.innerHTML = this.alt;
   }
     
-    
   img11.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -411,7 +421,12 @@
     captionText.innerHTML = this.alt;
   }
     
-    
+  img13.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+  }
     
     
     
