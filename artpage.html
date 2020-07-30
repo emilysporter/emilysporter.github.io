@@ -265,6 +265,7 @@
           <p></p>
         
                   <img class="modalImg" id="myImg8" src="img/AdaLovelaceArtProjectEmilyPorter_Brighter.png" alt="Mother of Programming. Digital. 3/18/2018" width="300" height="460">
+                  <img class="modalImg" id="myImg11" src="img/photoshopfun.jpg" alt="Faded Faces. Digital. 3/10/2018" width="300" height="460">
 
         
         
@@ -317,6 +318,7 @@
   var img8 = document.getElementById('myImg8');
   var img9 = document.getElementById('myImg9');
   var img10 = document.getElementById('myImg10');
+  var img11 = document.getElementById('myImg11');
     
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
@@ -391,6 +393,13 @@
     captionText.innerHTML = this.alt;
   }
     
+    
+  img11.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+  }
     
     
     
